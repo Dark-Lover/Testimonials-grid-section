@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --mviolet: rgb(117, 65, 200);
+  --dark-g-b: hsl(217, 19%, 35%);
+  --dark-b-b: hsl(219, 29%, 14%);
+  --light-g: hsl(0, 0%, 81%);
+  --light-g-b: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+#container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 20px 60px;
+  background-color: rgb(193, 234, 250);
+}
+
+.testimonials {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  padding: 1.2em;
+  border-radius: 10px;
+}
+/*Section 1*/
+.section1 {
+  grid-column: 1/3;
+  position: relative;
+  background-color: var(--mviolet);
+}
+.section1 .quote {
+  position: absolute;
+  right: 3em;
+  top: 0;
+  z-index: 1;
+  opacity: 0.8;
+}
+.section1 .author img,
+.section4 .author img {
+  border: 3px solid rgb(156, 113, 224);
+}
+.section1 .infos .fullName {
+  color: var(--light-g-b);
+}
+.section1 .infos .job {
+  color: rgba(255, 255, 255, 0.5);
+}
+.section1 .heading {
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+.section1 .lead,
+.section2 .lead,
+.section4 .lead {
+  color: var(--light-g);
+}
+/*Section 2*/
+.section2 {
+  grid-column: 3/4;
+  background-color: var(--dark-g-b);
+}
+.section2 .author img {
+  border: 3px solid var(--light-g);
+}
+.section2 .infos .fullName,
+.section4 .infos .fullName {
+  color: var(--light-g-b);
+}
+.section2 .infos .job,
+.section4 .infos .job {
+  color: rgba(255, 255, 255, 0.5);
+}
+.section2 .heading,
+.section4 .heading {
+  color: white;
+  position: relative;
+}
+/*Section 3*/
+.section3 {
+  grid-column: 1/2;
+  background-color: #ffffee;
+}
+.section3 .author img,
+.section5 .author img {
+  border: 3px solid var(--light-g);
+}
+.section3 .infos .fullName,
+.section5 .infos .fullName {
+  color: var(--dark-b-b);
+}
+.section3 .infos .job,
+.section5 .infos .job {
+  color: var(--light-g);
+}
+.section3 .heading,
+.section5 .heading {
+  color: var(--dark-b-b);
+}
+/* Section 4 */
+.section4 {
+  grid-column: 2/4;
+  background-color: var(--dark-b-b);
+}
+/* Section 5*/
+.section5 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-color: #ffffee;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.author img {
+  width: 2em;
+  border-radius: 50%;
+}
+.infos {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullName {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.job {
+  font-size: 0.8em;
+}
+
+.heading {
+  font-size: 1.3em;
+  margin: 15px 0;
+  font-weight: 500;
+  z-index: 0;
+}
+
+.lead {
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+/* ! footer */
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1100px) {
+  #container {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+  .testimonials {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  #container {
+    font-size: 14px;
+  }
+  .testimonial {
+    padding: 0.9em;
+  }
+  .heading {
+    font-size: 1.1;
+  }
+}
+
+@media (max-width: 800px) {
+  #container {
+    font-size: 16px;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.2em;
+  }
+  .testimonial {
+    padding: 1.2em;
+  }
+}
+
+@media (max-width: 800px) {
+  #container {
+    font-size: 16px;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.2em;
+  }
+  .testimonial {
+    padding: 1.2em;
+  }
+}
+
+@media (max-width: 425px) {
+  #container {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.2em;
+  }
+  .testimonial {
+    padding: 1.2em;
+  }
+  .section1 .quote {
+    right: 10px;
+    width: 5em;
+  }
+}
