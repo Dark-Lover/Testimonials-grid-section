@@ -235,11 +235,11 @@ body {
   .testimonials {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 1.2em;
   }
   .testimonial {
     padding: 1.2em;
+    margin-bottom: 15px;
   }
   .section1 .quote {
     right: 10px;
