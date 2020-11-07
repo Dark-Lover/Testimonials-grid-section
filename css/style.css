@@ -17,7 +17,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  background-color: rgb(193, 234, 250);
+  background-color: hsl(213, 44%, 95%);
 }
 
 #container {
