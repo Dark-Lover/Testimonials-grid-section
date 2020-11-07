@@ -17,6 +17,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  background-color: rgb(193, 234, 250);
 }
 
 #container {
@@ -27,7 +28,6 @@ body {
   min-height: 100vh;
   justify-content: center;
   padding: 20px 60px;
-  background-color: rgb(193, 234, 250);
 }
 
 .testimonials {
